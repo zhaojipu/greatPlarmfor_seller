@@ -3,6 +3,8 @@ package com.greatPlarm.seller.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.greatPlarm.seller.http.RetrofitHelper;
+
 /**
  * Author:zhao
  * VersionCode:1.0
@@ -11,13 +13,15 @@ import android.support.annotation.Nullable;
  */
 
 public abstract class BaseNetActivity<T extends BsaePresenter > extends BaseActivity {
-    protected T mPresenter;
+    private RetrofitHelper retrofitHelper;
 
+    protected T mPresenter;
     public abstract T getmPresenter();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter=getmPresenter();
+        retrofitHelper=RetrofitHelper.get();
     }
 }

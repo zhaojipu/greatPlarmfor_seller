@@ -1,5 +1,6 @@
 package com.greatPlarm.seller.ui;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,18 +29,23 @@ public class WelcomeActivity extends BaseActivity {
         setNoHeadLayout(R.layout.activity_welcome);
         setTitle("欢迎");
 
+        textView.setText("4545454ds5");
     }
 
     /**
      * 开机动画
      */
-    private void initAnimotion(){
+    private void initAnimotion() {
 
     }
 
 
     @OnClick(R.id.textView)
-    public void onClick() {
-        IntentUtils.showActivity(this,MainActivity.class);
+    public void onClick(View view) {
+        IntentUtils.showActivity(this, MainActivity.class);
     }
+
+
+
+
 }
