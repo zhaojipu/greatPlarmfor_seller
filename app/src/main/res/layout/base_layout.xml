@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--头部布局&#45;&#45;标题，返回键等-->
+    <RelativeLayout
+        android:id="@+id/rl_baseLayout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--该布局填充不同Acticity的xml布局id-->
+    <RelativeLayout
+        android:id="@+id/rl_baseLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--错误界面及加载失败的界面填充-->
+    <RelativeLayout
+        android:id="@+id/rl_baseLayout_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
