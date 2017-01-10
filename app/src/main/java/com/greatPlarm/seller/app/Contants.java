@@ -8,5 +8,6 @@ package com.greatPlarm.seller.app;
 
 public class Contants {
     public static final String PATH_CACHE="/seller/download";
-    public static final String HTTP_URL_HEAD="https://www.dengyiwang.net/p/";
+//    public static final String HTTP_URL_HEAD="http://app.irddtest.cn/p/";
+    public static final String HTTP_URL_HEAD="http://192.168.1.66:8080/p/";
 }

@@ -12,14 +12,33 @@ import com.greatPlarm.seller.http.request.RequestParam;
 public class LoginParams implements RequestParam{
 
     private String loginName;
-    private String password;
+    private String loginPassword;
+
+    private int shopId;
+    private int pageNum;
+
+    public int getShopId() {
+        return shopId;
+    }
+
+    public void setShopId(int shopId) {
+        this.shopId = shopId;
+    }
+
+    public int getPageNum() {
+        return pageNum;
+    }
+
+    public void setPageNum(int pageNum) {
+        this.pageNum = pageNum;
+    }
 
     public String getLoginName() {
         return loginName;
     }
 
     public String getPassword() {
-        return password;
+        return loginPassword;
     }
 
     public void setLoginName(String loginName) {
@@ -27,6 +46,6 @@ public class LoginParams implements RequestParam{
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.loginPassword = loginPassword;
     }
 }

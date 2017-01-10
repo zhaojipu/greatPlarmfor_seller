@@ -1,6 +1,7 @@
 package com.greatPlarm.seller.presenter;
 
 import com.greatPlarm.seller.base.RxPresenter;
+import com.greatPlarm.seller.http.ErrorCallBack;
 import com.greatPlarm.seller.http.request.paramsEntity.LoginParams;
 import com.greatPlarm.seller.http.responseEntity.LoginEntity;
 import com.greatPlarm.seller.http.responseEntity.RootResponse;
@@ -30,7 +31,7 @@ public class LoginPresenter extends RxPresenter<MainActivity> {
                     public void call(LoginEntity loginEntity) {
                         mView.showMsg(loginEntity);
                     }
-                },null);
+                },new ErrorCallBack(mView));
     }
     public void logins(LoginParams params){
         Subscription subscription=mRetrofitHelper.logins(params)
@@ -41,6 +42,8 @@ public class LoginPresenter extends RxPresenter<MainActivity> {
                     public void call(LoginEntity loginEntity) {
                         mView.showMsg(loginEntity);
                     }
-                },null);
+                },new ErrorCallBack(mView));
+
+        addSubscribe(subscription);
     }
 }

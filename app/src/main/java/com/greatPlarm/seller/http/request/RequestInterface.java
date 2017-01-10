@@ -6,6 +6,7 @@ import com.greatPlarm.seller.http.responseEntity.RootResponse;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 import rx.Observable;
 
@@ -22,12 +23,12 @@ public interface RequestInterface {
      * 登录接口
      */
     interface Login{
-        @POST("login")
+        @POST("goods/getCateList")
         Observable<RootResponse<LoginEntity>> login(@Body RootRequestEntity entity );
 
         @FormUrlEncoded
-        @POST("login")
-        Observable<RootResponse<LoginEntity>> logins(@Field("loginName") String name,@Field("loginPassword") String paw,@Field("deviceId") String op );
+        @GET("login")
+        Observable<RootResponse<LoginEntity>> logins(@Field("loginName") String loginName,@Field("loginPassword") String loginPassword,@Field("deviceId") String deviceId);
     }
 
     class RootRequestEntity{

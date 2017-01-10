@@ -132,6 +132,6 @@ public class RetrofitHelper {
         map.put("loginName","weihua123");
         map.put("loginPassword","wk1234");
         map.put("deviceId","weihua123");
-        return retrofit.create(RequestInterface.Login.class).logins("weihua123","wk1234","sd");
+        return retrofit.create(RequestInterface.Login.class).logins("weihua123","weihua123","sd");
     }
 }

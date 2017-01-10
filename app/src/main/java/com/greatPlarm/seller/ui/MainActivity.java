@@ -38,6 +38,7 @@ public class MainActivity extends BaseNetActivity<LoginPresenter> implements Bas
         params.setLoginName("123");
         params.setPassword("123");
         mPresenter.logins(params);
+//        mPresenter.login(params);
     }
 
     @Override
