@@ -1,11 +1,10 @@
 package com.greatPlarm.seller.presenter;
 
+import com.greatPlarm.seller.base.BaseView;
 import com.greatPlarm.seller.base.RxPresenter;
-import com.greatPlarm.seller.http.ErrorCallBack;
 import com.greatPlarm.seller.http.request.paramsEntity.LoginParams;
 import com.greatPlarm.seller.http.responseEntity.LoginEntity;
 import com.greatPlarm.seller.http.responseEntity.RootResponse;
-import com.greatPlarm.seller.ui.MainActivity;
 import com.greatPlarm.seller.util.RxUtils;
 
 import rx.Subscription;
@@ -17,8 +16,8 @@ import rx.functions.Action1;
  * Created by Administrator on 2017/1/9 0009.
  */
 
-public class LoginPresenter extends RxPresenter<MainActivity> {
-    public LoginPresenter(MainActivity mView) {
+public class LoginPresenter extends RxPresenter<BaseView> {
+    public LoginPresenter(BaseView mView) {
         super(mView);
     }
 
@@ -29,9 +28,9 @@ public class LoginPresenter extends RxPresenter<MainActivity> {
                 .subscribe(new Action1<LoginEntity>() {
                     @Override
                     public void call(LoginEntity loginEntity) {
-                        mView.showMsg(loginEntity);
+//                        mView.showMsg(loginEntity);
                     }
-                },new ErrorCallBack(mView));
+                },null);
     }
     public void logins(LoginParams params){
         Subscription subscription=mRetrofitHelper.logins(params)
@@ -40,9 +39,9 @@ public class LoginPresenter extends RxPresenter<MainActivity> {
                 .subscribe(new Action1<LoginEntity>() {
                     @Override
                     public void call(LoginEntity loginEntity) {
-                        mView.showMsg(loginEntity);
+//                        mView.showMsg(loginEntity);
                     }
-                },new ErrorCallBack(mView));
+                },null);
 
         addSubscribe(subscription);
     }
