@@ -25,21 +25,21 @@ public abstract class BaseFragment<T extends BsaePresenter> extends SupportFragm
     protected Context mContext;
     protected Activity mActivity;
     private Unbinder mUnbinder;
-    private boolean isInited=false;
+    private boolean isInited = false;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mActivity= (Activity) context;
-        mContext=context;
+        mActivity = (Activity) context;
+        mContext = context;
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        mView=inflater.inflate(getLayoutId(),container);
-        mPresenter=getmPresenter();
+        mView = inflater.inflate(getLayoutId(), container,false);
+        mPresenter = getmPresenter();
         return mView;
     }
 
@@ -47,8 +47,8 @@ public abstract class BaseFragment<T extends BsaePresenter> extends SupportFragm
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mPresenter.attachView(this);
-        mUnbinder= ButterKnife.bind(this,view);
-        if(savedInstanceState==null){
+        mUnbinder = ButterKnife.bind(this, view);
+        if (savedInstanceState == null) {
             if (!isHidden()) {
                 isInited = true;
                 initEventAndData();
@@ -83,6 +83,8 @@ public abstract class BaseFragment<T extends BsaePresenter> extends SupportFragm
     }
 
     protected abstract int getLayoutId();
-protected abstract T getmPresenter();
+
+    protected abstract T getmPresenter();
+
     protected abstract void initEventAndData();
 }
