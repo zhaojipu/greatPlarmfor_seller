@@ -4,4 +4,24 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--店铺基本信息-->
+    <string name="store_logo">店铺logo</string>
+    <string name="store_name">店铺名称</string>
+    <string name="store_location">所在地</string>
+    <string name="store_address">详细地址</string>
+    <string name="store_pay_method">支付方式</string>
+    <string name="long_text_test">支付方式支付方式支付方式支付方式支付方式支付方式支付方式支付方式</string>
+
+    <array name="pay_method">
+        <item>支付宝支付</item>
+        <item>易宝支付</item>
+    </array>
+
+    <!--设置界面-->
+    <string name="setting_title">设置</string>
+    <string name="setting_scan_code">扫描二维码，您的朋友也可以下载大平台卖家版客户端</string>
+    <string name="setting_versioncode">当前版本号</string>
+    <string name="setting_clear">清除本地缓存</string>
+    <string name="setting_login_out">退出登录</string>
 </resources>
