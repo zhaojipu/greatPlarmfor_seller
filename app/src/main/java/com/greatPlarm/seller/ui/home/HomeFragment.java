@@ -1,12 +1,8 @@
 package com.greatPlarm.seller.ui.home;
 
-import android.widget.TextView;
-
 import com.greatPlarm.seller.R;
 import com.greatPlarm.seller.base.BaseFragment;
 import com.greatPlarm.seller.base.BaseView;
-
-import butterknife.BindView;
 
 /**
  * Author:zhao
@@ -15,8 +11,6 @@ import butterknife.BindView;
  */
 
 public class HomeFragment extends BaseFragment<HomePresenter> implements BaseView {
-    @BindView(R.id.textView2)
-    TextView textView2;
 
     @Override
     protected int getLayoutId() {
