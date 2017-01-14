@@ -10,7 +10,6 @@ import android.widget.ScrollView;
 
 import com.greatPlarm.seller.R;
 import com.greatPlarm.seller.base.BaseNetActivity;
-import com.greatPlarm.seller.base.BaseView;
 import com.greatPlarm.seller.presenter.LoginPresenter;
 import com.greatPlarm.seller.ui.MainActivity;
 import com.wangku.library.utils.IntentUtils;
@@ -26,7 +25,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2017/1/9 0009.
  */
 
-public class LoginActivity extends BaseNetActivity<LoginPresenter> implements BaseView {
+public class LoginActivity extends BaseNetActivity<LoginPresenter>  {
 
 
     @BindView(R.id.iv_logo)

@@ -1,5 +1,6 @@
 package com.greatPlarm.seller.ui.order;
 
+import com.greatPlarm.seller.base.BaseView;
 import com.greatPlarm.seller.base.RxPresenter;
 
 /**
@@ -8,8 +9,8 @@ import com.greatPlarm.seller.base.RxPresenter;
  * Created by Administrator on 2017/1/12 0012.
  */
 
-public class OrderPresenter extends RxPresenter<OrderFragment> {
-    public OrderPresenter(OrderFragment mView) {
+public class OrderPresenter extends RxPresenter<BaseView> {
+    public OrderPresenter(BaseView mView) {
         super(mView);
     }
 

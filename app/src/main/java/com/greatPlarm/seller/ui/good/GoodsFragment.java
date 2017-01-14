@@ -2,7 +2,6 @@ package com.greatPlarm.seller.ui.good;
 
 import com.greatPlarm.seller.R;
 import com.greatPlarm.seller.base.BaseFragment;
-import com.greatPlarm.seller.base.BaseView;
 
 /**
  * Author:zhao
@@ -10,7 +9,7 @@ import com.greatPlarm.seller.base.BaseView;
  * Created by Administrator on 2017/1/12 0012.
  */
 
-public class GoodsFragment extends BaseFragment<GoodsPresenter> implements BaseView{
+public class GoodsFragment extends BaseFragment<GoodsPresenter> {
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_goods;

@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import com.greatPlarm.seller.R;
 import com.greatPlarm.seller.base.BaseNetActivity;
-import com.greatPlarm.seller.base.BaseView;
 import com.greatPlarm.seller.ui.login.LoginActivity;
 import com.wangku.library.utils.IntentUtils;
 import com.wangku.library.utils.ToastUtils;
@@ -21,7 +20,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2017/1/13 0013.
  */
 
-public class SettingActivity extends BaseNetActivity<SettingPresente> implements BaseView {
+public class SettingActivity extends BaseNetActivity<SettingPresente>  {
     @BindView(R.id.tv_set_versioncode)
     TextView tvSetVersioncode;
     @BindView(R.id.tv_set_clear)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f0f0f0"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/nowifi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/error_nowifi"
+        android:textColor="@color/grey_666"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/error_checkwifi"
+        android:textColor="@color/grey_999"
+        android:textSize="@dimen/text_size_14" />
+<!--重新加载-->
+    <Button
+        android:id="@+id/btn_reload"
+        android:layout_width="75dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_shape_default"
+        android:text="@string/error_try_again"
+        android:textColor="@color/grey_666"
+        android:textSize="@dimen/text_size_10" />
+</LinearLayout>

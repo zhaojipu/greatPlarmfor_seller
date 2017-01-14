@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f0f0f0">
+
+    <include layout="@layout/layout_connect_error"
+        android:visibility="gone"/>
+
+
+    <com.greatPlarm.seller.weight.CustomSwipeRefreshLayout
+        android:id="@+id/swipeLayout_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.greatPlarm.seller.weight.CustomSwipeRefreshLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_order_title"/>
+</FrameLayout>

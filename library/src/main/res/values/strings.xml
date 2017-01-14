@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="dont_have_camera_app">该设备没有拍照应用</string>
+    <string name="cant_insert_album">发生意外，无法写入相册</string>
+    <!--注册界面提示信息-->
+    <string name="hint_register_title">注册</string>
+    <string name="hint_register_phone">请输入您的手机号</string>
+    <string name="hint_register_msgcode">请输入短信验证码</string>
+    <string name="hint_register_request_msgcode">获取验证码</string>
+    <string name="hint_register_password">请设置6-20位密码</string>
+    <string name="hint_register_agreement">我已阅读并同意《用户注册协议》</string>
+    <string name="hint_register_name_digits">  ._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ
+</string>
+    <!--登录界面提示信息-->
+    <string name="hint_login_title">登录</string>
+    <string name="hint_login_username">手机号/用户名/邮箱</string>
+    <string name="hint_login_password">请输入密码</string>
+    <string name="hint_login_toRegister">免费注册</string>
+    <string name="hint_login_toForget">忘记密码</string>
+    <!--找回密码-->
+    <string name="hint_findpsw_title">找回密码</string>
+    <string name="hint_findpsw_confirm">提交</string>
+    <!--修改密码-->
+    <string name="hint_alterpsw_title">修改密码</string>
+    <string name="hint_alterpsw_old">请输入原密码</string>
+    <string name="hint_alterpsw_new">请设置6-20位新密码</string>
+</resources>

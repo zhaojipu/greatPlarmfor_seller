@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import com.greatPlarm.seller.R;
 import com.greatPlarm.seller.base.BaseFragment;
-import com.greatPlarm.seller.base.BaseView;
 import com.greatPlarm.seller.ui.set.SettingActivity;
 import com.wangku.library.utils.IntentUtils;
 import com.wangku.library.utils.ToastUtils;
@@ -22,7 +21,7 @@ import butterknife.OnClick;
  * Created by Administrator on 2017/1/12 0012.
  */
 
-public class ShopFragment extends BaseFragment<ShopPresenter> implements BaseView {
+public class ShopFragment extends BaseFragment<ShopPresenter>  {
     @BindView(R.id.btn_back)
     LinearLayout btnBack;
     @BindView(R.id.tv_title)

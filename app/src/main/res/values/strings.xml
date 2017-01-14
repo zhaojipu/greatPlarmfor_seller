@@ -24,4 +24,8 @@
     <string name="setting_versioncode">当前版本号</string>
     <string name="setting_clear">清除本地缓存</string>
     <string name="setting_login_out">退出登录</string>
+
+    <string name="error_nowifi">网络连接失败</string>
+    <string name="error_checkwifi">请检查您的网络</string>
+    <string name="error_try_again">重新加载</string>
 </resources>

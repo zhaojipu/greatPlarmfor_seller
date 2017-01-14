@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_shallow"
+    android:orientation="vertical">
+
+    <!-- 自定义标题的布局-->
+    <RelativeLayout
+        android:id="@+id/layoutBaseHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <!-- 主体内容的布局-->
+    <RelativeLayout
+        android:id="@+id/layoutBaseContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <!-- 可选显示的布局(网络出错,没有数据,加载中)-->
+    <RelativeLayout
+        android:id="@+id/layoutBaseOption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></RelativeLayout>
+
+</LinearLayout>
